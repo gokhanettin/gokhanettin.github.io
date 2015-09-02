@@ -7,7 +7,7 @@ tags:
 
 **Caution:** Following instructions may break your computer wiping off your
 harddisk. These instructions are my personal notes. They were written as a
-future reference and didn't mean to be a complete guide. Follow them at your own
+future reference and don't mean to be a complete guide. Follow them at your own
 risk.
 
 It is convenient to have a USB stick that can boot in both UEFI and Legacy modes
