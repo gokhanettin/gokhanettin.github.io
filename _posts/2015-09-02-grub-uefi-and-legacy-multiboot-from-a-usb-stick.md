@@ -17,7 +17,7 @@ post walks through the steps to have such a USB stick. I use a 8 GB USB stick.
 ## Preparing USB Stick
 Insert your USB flash and check its /dev/sdX
 
-{% highlight bash %}
+{% highlight console %}
 gokhanettin@pk5:~$ lsblk
 NAME   MAJ:MIN RM   SIZE RO TYPE MOUNTPOINT
 sda      8:0    0 931.5G  0 disk 
@@ -30,12 +30,12 @@ sdc      8:32   1   7.6G  0 disk
 gokhanettin@pk5:~$ 
 {% endhighlight %}
 
-Mine is */dev/sdc*. `fdisk -l` or `dmesg | tail` also would do the trick.
+Mine is `/dev/sdc`. `fdisk -l` or `dmesg | tail` also would do the trick.
 
-Create partitions for both legacy bios boot and efi boot. Replace /dev/sdX with
+Create partitions for both legacy bios boot and efi boot. Replace `/dev/sdX` with
 yours.
 
-{% highlight bash %}
+{% highlight console %}
 sudo su
 parted /dev/sdX -- mktable gpt
 parted /dev/sdX -- mkpart biosgrub fat32 1MiB 4MiB
@@ -44,9 +44,9 @@ parted /dev/sdX -- set 1 bios_grub on
 parted /dev/sdX -- set 2 esp on
 {% endhighlight %}
 
-Print what we have now. Here is my */dev/sdc*.
+Print what we have now. Here is my `/dev/sdc`.
 
-{% highlight bash %}
+{% highlight console %}
 root@pk5:/home/gokhanettin# parted /dev/sdc -- print
 Model: Generic Flash Disk (scsi)
 Disk /dev/sdc: 8179MB
@@ -59,10 +59,10 @@ Number  Start   End     Size    File system  Name      Flags
  2      4194kB  8178MB  8174MB               efi       boot, esp
 {% endhighlight %}
 
-Make a file system on sdX2 labeling it MULTIBOOT. Mount it and install legacy
-and uefi grub on it.
+Make a file system on `/dev/sdX2` labeling it MULTIBOOT. Mount it and install
+legacy and uefi grub on it.
 
-{% highlight bash %}
+{% highlight console %}
 mkfs -t vfat -n MULTIBOOT /dev/sdX2
 mount /dev/sdX2 /mnt
 
@@ -78,7 +78,7 @@ grub-install --removable --no-nvram --no-uefi-secure-boot \
 
 Copy your iso files into your USB stick.
 
-{% highlight bash %}
+{% highlight console %}
 mkdir /mnt/isos
 exit # Exit from root
 sudo cp ~/Downloads/*.iso /mnt/isos && sync
@@ -86,7 +86,7 @@ sudo cp ~/Downloads/*.iso /mnt/isos && sync
 
 Create a `mnt/grub/grub.cfg`
 
-{% highlight bash %}
+{% highlight console %}
 sudo vim /mnt/grub/grub.cfg
 {% endhighlight %}
 
@@ -135,7 +135,7 @@ In a live UEFI booted system, mount installed system for chroot. You can check
 your installed system partition with `lsblk` or `fdisk -l` (sda1, sdb2, etc...)
 replace them with sdXY in the following commands.
 
-{% highlight bash %}
+{% highlight console %}
 sudo su
 mount /dev/sdXY /mnt # sdXY is a Linux system partition
 mount /dev/sdXY /mnt/boot/efi # sdXY is a EFI partition
@@ -147,7 +147,7 @@ mount -o bind /tmp /mnt/tmp
 
 chroot into installed system.
 
-{% highlight bash %}
+{% highlight console %}
 chroot /mnt /bin/bash
 export PS1="(chroot) $PS1"
 {% endhighlight %}
@@ -163,7 +163,7 @@ grub-install --target=x86_64-efi --efi-directory=/boot/efi
 
 Generate grub configuration, exit chroot, unmount and reboot.
 
-{% highlight bash %}
+{% highlight console %}
 grub-mkconfig -o /boot/grub/grub.cfg
 exit
 umount -f /mnt/dev
@@ -176,7 +176,7 @@ reboot
 As a side note, you can check boot entries and change their boot order using
 `efibootmgr`
 
-{% highlight bash %}
+{% highlight console %}
 sudo efibootmgr -v # Check boot order, you will see boot entries like Boot0003*
 sudo efibootmgr -o XXXX # Computer will boot from BootXXXX* from now on.
 {% endhighlight %}
@@ -188,7 +188,7 @@ your installed system partition with `lsblk` or `fdisk -l` (sda1, sdb2, etc...)
 replace them with sdXY in the following commands.
 
 
-{% highlight bash %}
+{% highlight console %}
 sudo su
 mount /dev/sdXY /mnt # sdXY is Linux system partition
 mount -o bind /dev /mnt/dev
@@ -199,7 +199,7 @@ mount -o bind /tmp /mnt/tmp
 
 chroot into installed system.
 
-{% highlight bash %}
+{% highlight console %}
 chroot /mnt /bin/bash
 export PS1="(chroot) $PS1"
 {% endhighlight %}
@@ -207,7 +207,7 @@ export PS1="(chroot) $PS1"
 Get necessary packages and install UEFI support. Replace *Pardus* with your
 distro name.
 
-{% highlight bash %}
+{% highlight console %}
 apt-get install grub-pc-bin grub2-common
 grub-install --boot-directory=/boot \
      --target=i386-pc /dev/sdX
@@ -215,7 +215,7 @@ grub-install --boot-directory=/boot \
 
 Generate grub configuration, exit chroot, unmount and reboot.
 
-{% highlight bash %}
+{% highlight console %}
 grub-mkconfig -o /boot/grub/grub.cfg
 exit
 umount -f /mnt/dev
