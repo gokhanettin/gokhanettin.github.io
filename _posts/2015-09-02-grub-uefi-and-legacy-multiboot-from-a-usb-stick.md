@@ -155,10 +155,10 @@ export PS1="(chroot) $PS1"
 Get necessary packages and install UEFI support. Replace *Pardus* with your
 distro name.
 
-{% highlight bash %}
+{% highlight console %}
 apt-get install grub-efi-amd64-bin grub2-common
-grub-install --target=x86_64-efi --efi-directory=/boot/efi 
---bootloader-id=Pardus --recheck --debug /dev/sdX
+grub-install --target=x86_64-efi --efi-directory=/boot/efi \
+    --bootloader-id=Pardus --recheck --debug /dev/sdX
 {% endhighlight %}
 
 Generate grub configuration, exit chroot, unmount and reboot.
@@ -210,7 +210,7 @@ distro name.
 {% highlight console %}
 apt-get install grub-pc-bin grub2-common
 grub-install --boot-directory=/boot \
-     --target=i386-pc /dev/sdX
+    --target=i386-pc /dev/sdX
 {% endhighlight %}
 
 Generate grub configuration, exit chroot, unmount and reboot.
