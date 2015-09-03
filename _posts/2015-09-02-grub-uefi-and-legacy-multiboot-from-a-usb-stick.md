@@ -137,7 +137,7 @@ replace them with sdXY in the following commands.
 
 {% highlight console %}
 sudo su
-mount /dev/sdXY /mnt # sdXY is a Linux system partition
+mount /dev/sdXY /mnt # sdXY is a linux system partition
 mount /dev/sdXY /mnt/boot/efi # sdXY is a EFI partition
 mount -o bind /dev /mnt/dev
 mount -t proc none /mnt/proc
@@ -170,6 +170,8 @@ umount -f /mnt/dev
 umount -f /mnt/proc
 umount -f /mnt/sys
 umount -f /mnt/tmp
+umount /mnt/boot/efi
+umount /mnt
 reboot
 {% endhighlight %}
 
@@ -190,7 +192,7 @@ replace them with sdXY in the following commands.
 
 {% highlight console %}
 sudo su
-mount /dev/sdXY /mnt # sdXY is Linux system partition
+mount /dev/sdXY /mnt # sdXY is a linux system partition
 mount -o bind /dev /mnt/dev
 mount -t proc none /mnt/proc
 mount -o bind /sys /mnt/sys
@@ -222,5 +224,6 @@ umount -f /mnt/dev
 umount -f /mnt/proc
 umount -f /mnt/sys
 umount -f /mnt/tmp
+umount /mnt
 reboot
 {% endhighlight %}
