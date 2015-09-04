@@ -40,7 +40,7 @@ Adjust directory names for your computer.
 {% highlight console %}
 sudo su
 mkdir /usr/share/ldoce5viewer
-cp -R /media/gokhanettin/GOKHANETTIN/ldoce5.data /usr/share/ldoce5viewer/ && sync
+cp -R /media/gokhanettin/LDOCE5/ldoce5.data /usr/share/ldoce5viewer/ && sync
 find /usr//share/ldoce5viewer/ldoce5.data -type d -print0 | xargs -0 chmod 555 
 find /usr//share/ldoce5viewer/ldoce5.data -type f -print0 | xargs -0 chmod 444
 exit
