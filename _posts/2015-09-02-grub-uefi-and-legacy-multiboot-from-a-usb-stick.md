@@ -227,3 +227,6 @@ umount -f /mnt/tmp
 umount /mnt
 reboot
 {% endhighlight %}
+
+**Resources**
+https://www.debian-administration.org/users/dkg/weblog/112
