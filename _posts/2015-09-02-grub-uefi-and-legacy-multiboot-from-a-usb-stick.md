@@ -229,4 +229,4 @@ reboot
 {% endhighlight %}
 
 ## Resources
-https://www.debian-administration.org/users/dkg/weblog/112
+<https://www.debian-administration.org/users/dkg/weblog/112>
