@@ -228,5 +228,5 @@ umount /mnt
 reboot
 {% endhighlight %}
 
-**Resources**
+## Resources
 https://www.debian-administration.org/users/dkg/weblog/112
