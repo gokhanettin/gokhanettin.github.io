@@ -16,7 +16,7 @@ sudo gem install bundler
 cd /path/to/this-repo
 bundle install
 ```
-Check out your blog blog before committing and push your changes.
+Check out your blog before committing and pushing your changes.
 
 ```bash
 bundle exec jekyll serve
