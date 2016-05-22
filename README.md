@@ -11,7 +11,7 @@ for background info.
  Install prerequisites.
 
 ```bash
-sudo apt-get install ruby ruby-dev node.js
+sudo apt-get install ruby ruby-dev node.js zlib1g-dev
 sudo gem install bundler
 cd /path/to/this-repo
 bundle install

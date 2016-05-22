@@ -6,11 +6,11 @@ tags:
 ---
 
 Longman Dictionary of Contemporary English 5 (LDOCE5) software won't install on
-my Debian based 64-bit disto (Pardus Kurumsal 5), but it is not a big deal since
-I wouldn't use the official software. I use the great [ldoce5viewer] -a python
-based application- instead. It requires *ldoce5.data* directory from the LDOCE5
-DVD-ROM. [ldoce5viewer] extracts the data, creates its index for incremental
-search out of *ldoce5.data* folder, and it is ready to go. I find it much more
+Ubuntu GNOME 16.04 LTS, but it is not a big deal since I wouldn't use the
+official software. I use the great [ldoce5viewer] -a python based application-
+instead. It requires *ldoce5.data* directory from the LDOCE5 DVD-ROM.
+[ldoce5viewer] extracts the data, creates its index for incremental search out
+of *ldoce5.data* folder, and it is ready to go. I find it much more
 user-friendly and faster than the official software.
 
 Here is how I built and installed [ldoce5viewer] on my distro.
@@ -19,8 +19,13 @@ Here is how I built and installed [ldoce5viewer] on my distro.
  
 {% highlight console %}
 sudo apt-get install python-qt4 pyqt4-dev-tools python-lxml \
-    python-whoosh python-gst0.10 gstreamer0.10-plugins-good \
-    gstreamer0.10-plugins-ugly python-qt4-phonon checkinstall
+    python-gst0.10 gstreamer0.10-plugins-good \
+    python-qt4-phonon checkinstall
+    
+# distro python-whoosh won't work, use this instead
+sudo apt-get install python-pip
+sudo pip install --upgrade pip
+sudo pip install whoosh
 {% endhighlight %}
 
 2. Git clone [ldoce5viewer], build and install.
@@ -34,8 +39,8 @@ sudo checkinstall
 
 3. Copy *ldoce5.data* from LDOCE5 DVD-ROM to `/usr/share/ldoce5viewer` or
 anywhere you like and change access permissions to read-only for regular files
-and read & execute for directories, otherwise you can't `cd` into directories.
-Adjust directory names for your computer.
+and read & execute for directories, otherwise you can't `cd` into the
+directories. Adjust directory names for your computer.
 
 {% highlight console %}
 sudo su
@@ -46,11 +51,12 @@ find /usr/share/ldoce5viewer/ldoce5.data -type f -print0 | xargs -0 chmod 444
 exit
 {% endhighlight %}
 
-Fire up [ldoce5viewer] and locate /usr/share/ldoce5viewer/ldoce5.data when it asks.
-After a while, it should complete indexing and words should appear as you type on it.
+Fire up [ldoce5viewer] and locate /usr/share/ldoce5viewer/ldoce5.data when it
+asks. After a while, it should complete indexing and words should appear as you
+type on it.
 
-If you want to remove [ldoce5viewer] and *ldoce5.data* from your computer run the
-following commands.
+If you want to remove [ldoce5viewer] and *ldoce5.data* from your computer run
+the following commands.
 
 {% highlight console %}
 sudo dpkg -r ldoce5viewer
