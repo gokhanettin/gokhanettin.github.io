@@ -17,7 +17,7 @@ Here is how I built and installed [ldoce5viewer] on my distro.
 
 1. Install prerequisite packages.
  
-{% highlight console %}
+{% highlight bash %}
 sudo apt-get install python-qt4 pyqt4-dev-tools python-lxml \
     python-gst0.10 gstreamer0.10-plugins-good \
     python-qt4-phonon checkinstall
@@ -30,7 +30,7 @@ sudo pip install whoosh
 
 2. Git clone [ldoce5viewer], build and install.
 
-{% highlight console %}
+{% highlight bash %}
 git clone https://github.com/ciscorn/ldoce5viewer.git
 cd ldoce5viewer
 make build
@@ -42,7 +42,7 @@ anywhere you like and change access permissions to read-only for regular files
 and read & execute for directories, otherwise you can't `cd` into the
 directories. Adjust directory names for your computer.
 
-{% highlight console %}
+{% highlight bash %}
 sudo su
 mkdir /usr/share/ldoce5viewer
 cp -R /media/gokhanettin/LDOCE5/ldoce5.data /usr/share/ldoce5viewer/ && sync
@@ -58,7 +58,7 @@ type on it.
 If you want to remove [ldoce5viewer] and *ldoce5.data* from your computer run
 the following commands.
 
-{% highlight console %}
+{% highlight bash %}
 sudo dpkg -r ldoce5viewer
 sudo rm -rf /usr/share/ldoce5viewer/ldoce5.data
 {% endhighlight %}
