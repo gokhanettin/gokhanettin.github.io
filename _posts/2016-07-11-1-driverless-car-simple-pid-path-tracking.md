@@ -2,8 +2,8 @@
 layout: post
 title: "1. Driverless Car: Simple PID - Path Tracking"
 tags:
-- PID controller
 - Driverless Car
+- PID controller
 ---
 
 Sebastian Thrun' s [TED Talk][1] and [TEDx Brussels Talk][2] struck me. Shortly

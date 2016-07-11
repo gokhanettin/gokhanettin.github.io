@@ -2,8 +2,8 @@
 layout: post
 title: "2. Driverless Car: Simple PID - Path Tracking(smoothed path)"
 tags:
-- PID controller
 - Driverless Car
+- PID controller
 ---
 
 My RC car's steering angle is 18 degrees maximum. It can't handle sharp turns
