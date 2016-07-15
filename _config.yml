@@ -29,10 +29,10 @@ contact_urls:
     label: "Twitter"
     icon: "twitter-square"
     username: "@gokhanettin"
-#  linkedin:
-#    url: "https://www.linkedin.com/in/<username>"
-#    label: "LinkedIn"
-#    icon: "linkedin-square"
+  linkedin:
+    url: "https://tr.linkedin.com/in/gökhan-karabulut-40b884104"
+    label: "LinkedIn"
+    icon: "linkedin-square"
   facebook:
     url: "https://www.facebook.com/gokhanettin"
     label: "Facebook"
