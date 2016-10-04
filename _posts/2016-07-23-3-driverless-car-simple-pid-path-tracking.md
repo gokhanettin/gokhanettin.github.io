@@ -23,8 +23,6 @@ simulation. This reduces the noise in steering.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/70_gBYIDxqU" frameborder="0" allowfullscreen></iframe>
 
-To find out more how the car works see the [notebook][1]. If you want to build
-your own self-driving RC car see the [source code][2].
+To find out more how the car works, see [my git repository][2].
 
-[1]: https://github.com/gokhanettin/driverless-car-notes/tree/v0.1.2
-[2]: https://github.com/gokhanettin/driverless-car/tree/v0.1.2
+[2]: https://github.com/gokhanettin/driverless-car

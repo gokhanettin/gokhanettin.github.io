@@ -25,9 +25,7 @@ planning. I hope to cover multiple approaches for each subject as I learn them.
 I use [Jupyter Notebook][7] to study and document theoretical concepts and
 implement them on Arduino to see how they look like in practice.
 
-Here is the video for the first part in the series. Please see the [notebook][8]
-for the full explanation of technical details. [Arduino source code][9] is also
-available.
+Here is the video for the first part in the series. Please see the [my git repository][9] for the details.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/rEmxMAjLMeY" frameborder="0" allowfullscreen></iframe>
 
@@ -38,5 +36,4 @@ available.
 [5]: http://teamsolaris.com/site/eng/index.html
 [6]: http://robots.stanford.edu/papers/thrun.stanley05.pdf
 [7]: http://jupyter.org/
-[8]: https://github.com/gokhanettin/driverless-car-notes/tree/v0.1.0
-[9]: https://github.com/gokhanettin/driverless-car/tree/v0.1.0
+[9]: https://github.com/gokhanettin/driverless-car
