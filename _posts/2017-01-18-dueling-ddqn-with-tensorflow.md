@@ -6,8 +6,8 @@ tags:
 ---
 
 I have implemented a [Dueling Double Deep Q-Network][1]
-using [Tensorflow][2] + [TFLearn][3] as a course project. It can learn
-different [Atari 2600 games][4] from raw pixels and achieve human-level success.
+using [TensorFlow][2] + [TFLearn][3] as a course project. It can learn
+different [Atari 2600 games][4] from raw pixels and achieve a human-level success.
 Furthermore, it does all these with no adjustment to the learning algorithm or
 hyperparameters.
 
