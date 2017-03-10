@@ -10,10 +10,10 @@ Sebastian Thrun' s [TED Talk][1] and [TEDx Brussels Talk][2] struck me. Shortly
 after, I found his [Artificial Intelligence for Robotics Course][3] at Udacity
 and thought I could start a hobby project, a self-driving RC car. If this hobby
 project makes fair amount of progress it could hopefully pave the way for
-miniature version of [DARPA Grand Challenge][4] with RC cars. Moreover, we can
+a miniature version of [DARPA Grand Challenge][4] with RC cars. Moreover, we can
 move [solar cars][5] one step further and arrange driverless solar car races.
-Article [Stanley: The Robot that Won the DARPA Grand Challenge][6] gives great
-insight into the format of the challenge. Miniature challenge can also use a
+Article [Stanley: The Robot that Won the DARPA Grand Challenge][6] gives a great
+insight into the format of the challenge. The miniature challenge can also use a
 similar format.
 
 <iframe src="https://embed-ssl.ted.com/talks/sebastian_thrun_google_s_driverless_car.html" width="640" height="360" frameborder="0" scrolling="no" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
@@ -23,7 +23,7 @@ self-driving RC car. The car is fundamentally going to be made up for four broad
 subjects. Path tracking control, localization, obstacle avoidance, and path
 planning. I hope to cover multiple approaches for each subject as I learn them.
 I use [Jupyter Notebook][7] to study and document theoretical concepts and
-implement them on Arduino to see how they look like in practice.
+implement them on an Arduino UNO to see how they look like in practice.
 
 Here is the video for the first part in the series. Please see the [my git repository][9] for the details.
 
@@ -36,4 +36,4 @@ Here is the video for the first part in the series. Please see the [my git repos
 [5]: http://teamsolaris.com/site/eng/index.html
 [6]: http://robots.stanford.edu/papers/thrun.stanley05.pdf
 [7]: http://jupyter.org/
-[9]: https://github.com/gokhanettin/driverless-car
+[9]: https://github.com/gokhanettin/driverless-car/tree/056fd3f36c8d404ae2d9f2395cc51b37180d6033
