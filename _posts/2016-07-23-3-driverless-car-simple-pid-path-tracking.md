@@ -1,7 +1,6 @@
 ---
 layout: post
-title: "3. Driverless Car: Simple PID - Path Tracking (variable
-desired speed)"
+title: "3. Driverless Car: Simple PID - Path Tracking (variable desired speed)"
 tags:
 - Driverless Car
 - PID controller

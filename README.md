@@ -1,6 +1,6 @@
-# Gokhan Karabulut Home Page
+# Gökhan Karabulut Home Page
 
-This is the code for the [Gokhan Karabulut Home Page](http://gokhanettin.github.io).
+This is the code for the [Gökhan Karabulut Home Page](http://gokhanettin.github.io).
 
 This is my home page based on [Yevgeniy Brikman Home Page](http://www.ybrikman.com).
 Check out [Migrating from Blogger to GitHub Pages and launching the new ybrikman.com](http://www.ybrikman.com/writing/2015/04/20/migrating-from-blogger-to-github-pages/)
@@ -27,6 +27,21 @@ Go to `http://localhost:4000` to test.
 See the [Jekyll](http://jekyllrb.com/) and [GitHub Pages](https://pages.github.com/)
 documentation for more info.
 
+# Docker quick start
+
+As an alternative to installing Ruby and Jekyll, if you're a user of
+[Docker](https://www.docker.com/) and [Docker
+Compose](https://docs.docker.com/compose/), you can run a Docker image of
+gokhanettin.github.io that has all the dependencies already setup for you.
+
+```bash
+git clone https://github.com/gokhanettin/gokhanettin.github.io.git
+cd gokhanettin.github.io
+docker-compose up
+```
+
+Go to `http://localhost:4000` to test.
+
 # Technologies
 
 1. Built with [Jekyll](http://jekyllrb.com/). This website is completely static
@@ -44,9 +59,6 @@ documentation for more info.
 1. I used [jQuery](https://jquery.com/), [lazySizes](http://afarkas.github.io/lazysizes/),
    and [responsive-nav.js](http://responsive-nav.com/) for behavior.
 1. I added [Disqus](https://disqus.com/websites/) as a commenting system.
-1. I'm using [UptimeRobot](http://uptimerobot.com/) and
-   [Google Analytics](http://www.google.com/analytics/) for monitoring and
-   metrics.
 
 # License
 
