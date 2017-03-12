@@ -20,4 +20,4 @@ video. To find out how, please see [my git repo][2] for the details.
 Note that steering PID derivative coefficient of real RC car
 is lowered by one to reduce steering oscillation.
 
-[2]: https://github.com/gokhanettin/driverless-car/tree/8586d21fe014b6de8ae79b96f1def513c967eac1
+[2]: https://github.com/gokhanettin/driverless-rccar/tree/8586d21fe014b6de8ae79b96f1def513c967eac1

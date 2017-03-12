@@ -25,4 +25,4 @@ the simulation. This reduces the noise in steering.
 
 To find out more how the car works, see [my git repository][2].
 
-[2]: https://github.com/gokhanettin/driverless-car/tree/dec8ea910758346810a68bb474581f92bcb6ce48
+[2]: https://github.com/gokhanettin/driverless-rccar/tree/dec8ea910758346810a68bb474581f92bcb6ce48

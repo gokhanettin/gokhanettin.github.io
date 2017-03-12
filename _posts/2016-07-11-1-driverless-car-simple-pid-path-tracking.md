@@ -36,4 +36,4 @@ Here is the video for the first part in the series. Please see the [my git repos
 [5]: http://teamsolaris.com/site/eng/index.html
 [6]: http://robots.stanford.edu/papers/thrun.stanley05.pdf
 [7]: http://jupyter.org/
-[9]: https://github.com/gokhanettin/driverless-car/tree/056fd3f36c8d404ae2d9f2395cc51b37180d6033
+[9]: https://github.com/gokhanettin/driverless-rccar/tree/056fd3f36c8d404ae2d9f2395cc51b37180d6033
