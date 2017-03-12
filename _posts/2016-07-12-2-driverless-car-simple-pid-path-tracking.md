@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "2. Driverless Car: Simple PID - Path Tracking (smoothed path)"
+title: "2. Driverless Car - Simple PID - Path Tracking (smoothed path)"
 tags:
 - Driverless Car
 - PID controller
