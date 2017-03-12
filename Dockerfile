@@ -20,7 +20,6 @@ RUN rm -rf /var/cache/apk/* /tmp/*
 # way that will be cached
 WORKDIR /tmp
 ADD Gemfile Gemfile
-ADD Gemfile.lock Gemfile.lock
 RUN bundle install
 
 # Copy source
