@@ -2,7 +2,7 @@
 layout: post
 title: "An artificial agent that can learn any game"
 tags:
-- Artificial intelligence
+- Deep Learning
 ---
 
 I have implemented a [Dueling Double Deep Q-Network][1]
