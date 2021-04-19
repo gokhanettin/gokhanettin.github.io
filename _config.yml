@@ -24,23 +24,23 @@ website_repo_url: "https://github.com/gokhanettin/gokhanettin.github.io"
 
 # URLs
 contact_urls:
-  twitter:
-    url: "https://twitter.com/gokhanettin"
-    label: "Twitter"
-    icon: "twitter-square"
-    username: "@gokhanettin"
+#  twitter:
+#    url: "https://twitter.com/gokhanettin"
+#    label: "Twitter"
+#    icon: "twitter-square"
+#    username: "@gokhanettin"
   linkedin:
     url: "https://tr.linkedin.com/in/gökhan-karabulut-40b884104"
     label: "LinkedIn"
     icon: "linkedin-square"
-  facebook:
-    url: "https://www.facebook.com/gokhanettin"
-    label: "Facebook"
-    icon: "facebook-square"
-  google:
-    url: "https://plus.google.com/u/0/100257541738467946513"
-    label: "Google+"
-    icon: "google-plus-square"
+#  facebook:
+#    url: "https://www.facebook.com/gokhanettin"
+#    label: "Facebook"
+#    icon: "facebook-square"
+#  google:
+#    url: "https://plus.google.com/u/0/100257541738467946513"
+#    label: "Google+"
+#    icon: "google-plus-square"
 #  slideshare:
 #    url: "https://www.slideshare.net/<username>"
 #    label: "SlideShare"
